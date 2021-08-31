@@ -1,0 +1,65 @@
+body {
+  display: flex;
+  height: 100vh;
+}
+.change-books-page {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+}
+.change-books-navigation {
+  display: flex;
+  flex-direction: row;
+}
+.change-books-list-item:not(:first-child) {
+  border-left: 1px solid rgba(77, 75, 75, 0.349);
+}
+.add-book-block {
+  display: flex;
+  overflow-y: scroll;
+  max-height: 100%;
+  align-items: center;
+  justify-content: center;
+  flex: 1 1 auto;
+  background-color: rgb(252, 252, 237);
+  vertical-align: center;
+}
+.edit-book-block {
+  flex: 1 1 auto;
+  display: flex;
+}
+.change-books-list-item {
+  flex-grow: 1;
+  min-width: 50%;
+  text-align: center;
+  padding: 20px;
+}
+.change-books-list-item:hover {
+  cursor: pointer;
+}
+#add-book-form {
+  -webkit-box-shadow: 0px 0px 18px 3px #229eff;
+  box-shadow: 0px 0px 18px 3px #229eff;
+  padding: 20px;
+  min-width: 300px;
+  width: 40%;
+}
+.hidden {
+  display: none;
+}
+
+.modal {
+  background-color: aliceblue;
+
+  display: flex;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  right: 0;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+.none {
+  display: none;
+}
